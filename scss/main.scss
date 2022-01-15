@@ -1,2 +1,23 @@
+//variables//
 @import './utils/vars';
+
+//base styles//
+@import './base/reset';
 @import './base/base';
+
+//components//
+@import './components/logo';
+@import './components/navigation';
+@import './components/modal';
+
+//layout//
+@import './layout/hero';
+@import './layout/benefits';
+@import './layout/work';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+
+//pages//
+@import './pages/portfolio';
+@import './pages/projects';
