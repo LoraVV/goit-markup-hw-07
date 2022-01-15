@@ -36,6 +36,16 @@
 .nav-link {
   position: relative;
   transition: color 250ms var(--animation-timing-function);
+
+  &:hover::after,
+  &:focus::after {
+    /* opacity: 1; */
+    transform: scale(1);
+  }
+
+  .nav-link.active {
+    color: var(--accent-color);
+  }
 }
 
 .nav-link::after {
@@ -51,16 +61,6 @@
   /* opacity: 0; */
   transform: scale(0);
   transition: transform 250ms var(--animation-timing-function);
-}
-
-.nav-link:hover::after,
-.nav-link:focus::after {
-  /* opacity: 1; */
-  transform: scale(1);
-}
-
-.nav-link.active {
-  color: var(--accent-color);
 }
 
 .active::after {
@@ -119,4 +119,9 @@
 .contacts-link:hover .contacts-icon,
 .contacts-link:focus .contacts-icon {
   fill: var(--accent-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
 }

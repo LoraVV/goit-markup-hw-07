@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet " href="./css/styles.css ">
+    <link rel="stylesheet " href="./css/main.min.css ">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <header class="header">
         <div class="container nav">
             <nav class="site-nav">
-                <a class="logo-up" href="/ "><span class="logo-first-word ">Web</span>Studio</a>
+                <a class="logo-up header__logo-up" href="/ "><span class="logo-up__first-word">Web</span>Studio</a>
 
                 <ul class="site-nav-links">
                     <li class="nav-item"><a class="nav-link active" href="./index.html ">Студия</a></li>
@@ -412,19 +412,18 @@
 
             </form>
         </div>
-
     </footer>
 
     <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" data-modal-close class="modal-close">
-                <svg class="modal-cross" width="11" height="11">
+            <button type="button" data-modal-close class="modal-close modal__close">
+                <svg class="modal__cross" width="11" height="11">
                     <use href="./images/sprite.svg#icon-Vectorx"></use>
                 </svg>
             </button>
-            <b class="modal-header">Оставьте свои данные, мы вам перезвоним</b>
-            <form action="" class="modal-form">
+            <b class="modal__header">Оставьте свои данные, мы вам перезвоним</b>
+            <form action="" class="modal-form modal__form">
                 <label class="form-input-box">Имя
                     <input type="text" name="name" class="form-input" required>
                     <svg class="form-input-icon">

@@ -1,8 +1,7 @@
 /* ===========Logo=========== */
 
 .logo-up,
-.logo-under,
-.logo-first-word {
+.logo-under {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -10,19 +9,20 @@
   text-decoration: none;
 }
 
+.logo-up {
+  color: #000000;
+
+  .logo-up__first-word {
+    color: var(--accent-color);
+  }
+}
+
 .logo-under {
   color: var(--primary-white-color);
 }
 
-.logo-up {
-  color: #000000;
+.header__logo-up {
   display: flex;
   align-items: center;
   margin-right: 93px;
-}
-
-.logo-first-word,
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
 }
