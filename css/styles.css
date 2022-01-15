@@ -62,7 +62,7 @@ ul {
 }
 
 
-/* ===========Лого=========== */
+/* ===========Logo=========== */
 
 .logo-up,
 .logo-under,
@@ -92,7 +92,7 @@ ul {
 }
 
 
-/* ===========Навигация сайта=========== */
+/* ===========Navigation=========== */
 
 .header {
     border: 1px solid #ECECEC;
@@ -215,7 +215,7 @@ ul {
 }
 
 
-/* ===========Герой=========== */
+/* =========Hero=========== */
 
 .hero-box {
     text-align: center;
@@ -269,7 +269,7 @@ ul {
 }
 
 
-/* ----------Модалка------------- */
+/* ----------Modal------------- */
 
 .backdrop {
     position: fixed;
@@ -286,7 +286,7 @@ ul {
 }
 
 
-/* когда показана */
+/* when shown */
 
 .backdrop.is-hidden {
     opacity: 0;
@@ -295,7 +295,7 @@ ul {
 }
 
 
-/* когда скрыта */
+/* when don't shown */
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(1.1);
@@ -441,7 +441,7 @@ ul {
     border-radius: 2px;
     margin-right: 10px;
     background-color: var(--primary-white-color);
-    /* background-image: url("../images/no-chek.svg");
+    /* background-image: url("../images/no-check.svg");
     background-position: center;
     background-size: contain; */
 }
@@ -492,7 +492,7 @@ ul {
 }
 
 
-/* ===========Преимущества/Работы/Команда=========== */
+/* ===========Benefits/Work/Team=========== */
 
 .section {
     padding: 94px 0;
@@ -534,7 +534,7 @@ ul {
 }
 
 
-/* ===========Преимущества=========== */
+/* ===========Benefits=========== */
 
 .benefits-main-title {
     margin-top: 0;
@@ -590,7 +590,7 @@ ul {
 }
 
 
-/* ===========Работы=========== */
+/* ===========Work=========== */
 
 .works-section {
     padding-top: 0;
@@ -631,7 +631,7 @@ ul {
 }
 
 
-/* ===========Команда=========== */
+/* ===========Team=========== */
 
 .team-section {
     background: var(--secondary-bgc);
@@ -710,7 +710,7 @@ ul {
 }
 
 
-/* ===========Постоянные клиенты=========== */
+/* ===========Clients=========== */
 
 .client-title {
     margin-bottom: 50px;
@@ -752,7 +752,7 @@ ul {
 }
 
 
-/* ===========Подвал=========== */
+/* ===========Footer=========== */
 
 .footer {
     padding: 60px 0;
@@ -952,7 +952,7 @@ ul {
 }
 
 
-/* Проекты */
+/* Projects */
 
 .links {
     margin-bottom: 50px;
@@ -974,7 +974,7 @@ ul {
 }
 
 .project-item {
-    /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов встроке) */
+    /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
     /* width: calc((100%-60px)/3); */
     /* margin: 15px; */
     margin-right: 30px;
