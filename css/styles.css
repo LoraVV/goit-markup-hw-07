@@ -102,12 +102,12 @@ ul {
     display: flex;
 }
 
-.sitenav {
+.site-nav {
     display: flex;
     align-items: center;
 }
 
-.sitenav-links,
+.site-nav-links,
 .contacts {
     display: flex;
     align-items: center;
