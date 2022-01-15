@@ -4,7 +4,7 @@
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero-box__title {
   margin-bottom: 30px;
   color: var(--primary-white-color);
   font-weight: 900;
@@ -42,10 +42,4 @@
   text-decoration: none;
   letter-spacing: 0.06em;
   transition: background-color 250ms var(--animation-timing-function);
-}
-
-.button-hero:hover,
-.button-hero:focus {
-  cursor: pointer;
-  background-color: #1b71b8;
 }
