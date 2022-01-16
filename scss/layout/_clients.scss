@@ -1,4 +1,4 @@
-.client-title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -8,9 +8,13 @@
   margin-bottom: 50px;
 }
 
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .item-client {
   display: flex;
-  content: '';
   justify-content: center;
   align-items: center;
 }

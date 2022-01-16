@@ -60,14 +60,18 @@
   color: var(--primary-text-color);
 }
 
-.icon-team-link {
+.employee-box {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.social-link {
+.employee-box__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.employee-box__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,19 +81,15 @@
   color: #afb1b8;
   transition: color 250ms var(--animation-timing-function),
     background-color 250ms var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
 }
 
-.social-link:hover,
-.social-link:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
-
-.icon-team-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.link-svg {
+.employee-box__icon {
   display: flex;
   fill: currentColor;
   width: 20px;
