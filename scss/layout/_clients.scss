@@ -13,17 +13,17 @@
   flex-wrap: wrap;
 }
 
-.item-client {
+.clients-list__item {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.item-client:not(:last-child) {
-  margin-right: 30px;
-}
-
-.link-client {
+.clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,14 +36,14 @@
   color: #afb1b8;
   transition: color 250ms var(--animation-timing-function),
     border-color 250ms var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
-.link-client:hover,
-.link-client:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.icon-client {
+.clients-list__icon {
   fill: currentColor;
 }
