@@ -1203,24 +1203,32 @@ ul {
           background-origin: border-box;
 }
 
-.portfolio-nav-box__button-links,
-.portfolio-nav-box__button-links:hover,
-.portfolio-nav-box__button-links:focus {
-  display: inline-block;
-  min-width: 73px;
-  padding: 6px 22px;
-  font-weight: 500;
+.filter {
   font-size: 16px;
   line-height: 1.63;
-  text-align: center;
   letter-spacing: 0.03em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  text-decoration: none;
 }
 
-.portfolio-nav-box__button-links {
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__button {
+  min-width: 73px;
+  padding: 6px 22px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
   border: transparent;
   color: var(--title-text-color);
   background-color: var(--secondary-bgc);
@@ -1231,27 +1239,12 @@ ul {
   transition: color 250ms var(--animation-timing-function), background-color 250ms var(--animation-timing-function), box-shadow 250ms var(--animation-timing-function), -webkit-box-shadow 250ms var(--animation-timing-function);
 }
 
-.portfolio-nav-box__button-links:hover, .portfolio-nav-box__button-links:focus {
+.filter__button:hover, .filter__button:focus {
   cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio-nav-box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.portfolio-nav-box__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .project-list {
@@ -1295,13 +1288,6 @@ ul {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-list__link:hover .project-list__text,
-.project-list__link:focus .project-list__text {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .project-list__description {
   overflow: hidden;
   position: relative;
@@ -1335,6 +1321,13 @@ ul {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+}
+
+.project-list__link:hover .project-list__text,
+.project-list__link:focus .project-list__text {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .project-box {
